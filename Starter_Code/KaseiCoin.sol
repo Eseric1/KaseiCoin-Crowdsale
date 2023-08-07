@@ -13,13 +13,13 @@ contract KaseiCoin is ERC20, ERC20Detailed, ERC20Mintable {
     constructor(
         string memory name,
         string memory symbol,
-        uint256 initial_supply
+        uint initial_supply
     )
         // Call the ERC20Detailed constructor with the name, symbol, and 18 parameters
         ERC20Detailed(name, symbol, 18)
         public
     {
         // Mint the initial supply of tokens to the contract creator
-        _mint(msg.sender, initial_supply);
+        _mint(msg.sender, 0);
     }
 }
