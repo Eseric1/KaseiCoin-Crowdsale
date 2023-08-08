@@ -19,7 +19,6 @@ contract KaseiCoin is ERC20, ERC20Detailed, ERC20Mintable {
         ERC20Detailed(name, symbol, 18)
         public
     {
-        // Mint the initial supply of tokens to the contract creator
-        _mint(msg.sender, 0);
+        
     }
 }
